@@ -1,0 +1,27 @@
+.banner {
+  padding: 120px 0;
+  background-image: url(../../../images/banner_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tars_tittle {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.tars_subtittle {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #c4c4c4;
+}
+.tars_banner_searchbar {
+  width: 80%;
+}
+.tars_banner_search_icon {
+  left: 12%;
+}
