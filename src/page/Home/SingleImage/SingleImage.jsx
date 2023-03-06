@@ -2,7 +2,7 @@ import React from "react";
 
 const SingleImage = ({ clickedImage }) => {
   const { urls, user, tags } = clickedImage;
-  //   console.log(clickedImage);
+
   return (
     <div
       class="modal fade"
@@ -42,22 +42,10 @@ const SingleImage = ({ clickedImage }) => {
               </div>
             </div>
           </div>
-          {/* <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              Send message
-            </button>
-          </div> */}
           <div className="">
             <h5>Related Tags</h5>
             <div>
-              {tags.map((tag, index) => (
+              {tags?.map((tag, index) => (
                 <span key={index}>{tag?.title}</span>
               ))}
             </div>

@@ -6,7 +6,6 @@ import SearchImages from "./SearchImages/SearchImages";
 const Home = () => {
   return (
     <div>
-      {/* <Loading/> */}
       <Banner />
       <SearchImages />
     </div>

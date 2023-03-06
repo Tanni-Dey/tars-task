@@ -13,7 +13,6 @@ const Header = () => {
   return (
     <div className="container">
       <nav className="navbar navbar-expand-lg tars_navbar">
-        {/* <div className="container-fluid"> */}
         <a className="navbar-brand tars_navbar_text" href="#0">
           Image Gallery
         </a>
@@ -33,9 +32,6 @@ const Header = () => {
             placeholder="Search Images here"
             aria-label="Search"
           />
-          {/* <button className="btn btn-outline-success" type="submit">
-              Search
-            </button> */}
         </form>
         <button
           className="navbar-toggler"

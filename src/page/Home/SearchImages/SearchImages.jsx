@@ -8,15 +8,6 @@ const SearchImages = () => {
   const [images, setImages] = useImages();
   const [clickedImage, setClickedImage] = useState({});
   const [imageId, setImageId] = useState("");
-  // const [searchText] = useContext(AppContext);
-  // const [images, setImages] = useState([]);
-  // useEffect(() => {
-  //   fetch(
-  //     `https://api.unsplash.com/search/photos?page=1&query=${searchText}&client_id=jIMbxi1dDgrxkRY6F1Bga3EXCkOYYjlZRsG4wRup728`
-  //   )
-  //     .then((res) => res.json())
-  //     .then((data) => setImages(data.results));
-  // }, [searchText]);
 
   useEffect(() => {
     fetch(
@@ -25,11 +16,6 @@ const SearchImages = () => {
       .then((res) => res.json())
       .then((data) => setClickedImage(data));
   }, [imageId]);
-
-  console.log(clickedImage);
-  // console.log(
-  //   `https://api.unsplash.com/search/photos?page=1&query=${searchText}&client_id=jIMbxi1dDgrxkRY6F1Bga3EXCkOYYjlZRsG4wRup728`
-  // );
 
   return (
     <div className="container">
